@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import Slider from "react-slick"; // Import React Slick
 import "slick-carousel/slick/slick.css"; // Import slick carousel CSS
 import "slick-carousel/slick/slick-theme.css"; // Import slick theme CSS
+import Image from "next/image";
+
+<Image src="/some-image.png" alt="Project Image" width={300} height={200} />
+
 
 const projects = [
   {
@@ -112,18 +116,19 @@ export default function Projects() {
                   onClick={() => window.open(project.link, "_blank")}
                 >
                   {/* Image above the title */}
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.name}
+                    width={100} // Set width
+                    height={100} // Set height
                     style={{
-                      width: "100px",
-                      height: "100px",
                       objectFit: "cover",
                       borderRadius: "8px",
                       marginBottom: "20px",
                       alignSelf: "center",
                     }}
                   />
+
                   <CardContent>
                     <Typography variant="h6" sx={{ fontWeight: "bold", color: "#f8f9fa" }}>
                       {project.name}

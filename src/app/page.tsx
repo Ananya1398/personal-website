@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Navbar from "@/components/navbar";
 import Cursor from "@/components/cursor";
 import Skills from "@/components/skills";

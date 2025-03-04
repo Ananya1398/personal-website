@@ -17,7 +17,7 @@ export default function AISection() {
       });
       const data = await res.json();
       setResponse(data.answer || "Error getting response.");
-    } catch (error) {
+    } catch {
       setResponse("Failed to connect to LLM.");
     }
   };

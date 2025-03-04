@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   try {
     const response = await queryOllama(question);
     return new Response(JSON.stringify({ answer: response }));
-  } catch (error) {
+  } catch {
     return new Response(JSON.stringify({ error: "Failed to get response from Ollama" }), { status: 500 });
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Container, Typography, Box, Stepper, Step, StepLabel, StepContent, Paper } from "@mui/material";
+import { Container, Typography, Stepper, Step, StepLabel, StepContent, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 
 const experience = [
