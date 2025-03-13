@@ -1,4 +1,4 @@
-import { Container, Typography, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
@@ -13,7 +13,7 @@ export default function Contact() {
           color: "#bbbbbb",
         }}
       >
-        Let's connect! Feel free to reach out.
+        Let&apos;s connect! Feel free to reach out.
       </Typography>
       <Box
         sx={{

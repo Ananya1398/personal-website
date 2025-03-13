@@ -8,7 +8,6 @@ import Projects from "@/components/projects";
 import Publications from "@/components/publications";
 import AISection from "@/components/AI";  // Import the AI section
 import Hero from "@/components/hero";
-import Contact from "@/components/contact";
 import About from "@/components/about";
 import { Container, Box, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
