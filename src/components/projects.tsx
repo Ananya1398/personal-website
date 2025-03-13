@@ -7,34 +7,33 @@ import "slick-carousel/slick/slick.css"; // Import slick carousel CSS
 import "slick-carousel/slick/slick-theme.css"; // Import slick theme CSS
 import Image from "next/image";
 
-<Image src="/some-image.png" alt="Project Image" width={300} height={200} />
 
 
 const projects = [
   {
-    name: "HireU: AI-Powered Hiring Assistant",
-    link: "https://devpost.com/software/hireu-ai",
-    image: "https://via.placeholder.com/150", // Sample image link
+    name: "HireU: AI-Powered Hiring and Grant Eligibility Assistant ",
+    link: "https://devpost.com/software/hireu",
+    image: "/media/hireu.png",
   },
   {
     name: "EduNavigate: Learning Management System",
-    link: "https://github.com/ananyaasthana/edunavigate",
-    image: "https://via.placeholder.com/150", // Sample image link
+    link: "https://edunavigate.netlify.app/#/Kanbas/Dashboard",
+    image: "/media/edunavigate.png",
   },
   {
-    name: "ARRM HIT Toolkit",
-    link: "https://github.com/ananyaasthana/arrmhit",
-    image: "https://via.placeholder.com/150", // Sample image link
+    name: "Ticket Booking System",
+    link: "https://github.com/Ananya1398/bus-ticket-booking-system",
+    image: "/media/bus.png", // Sample image link
   },
   {
-    name: "Image Manipulation Software",
-    link: "https://github.com/ananyaasthana/image-enhancement",
-    image: "https://via.placeholder.com/150", // Sample image link
+    name: "KNN Iris Model",
+    link: "https://github.com/Ananya1398/knn_iris_model/",
+    image: "/media/iris.png", // Sample image link
   },
   {
-    name: "Single Page App with React & Redux",
-    link: "https://github.com/ananyaasthana/spa-project",
-    image: "https://via.placeholder.com/150", // Sample image link
+    name: "Image Manipulation and Enhancement Software",
+    link: "https://github.com/Ananya1398/Image-Manipulation-using-Java",
+    image: "/media/pdp.jpg", // Sample image link
   },
 ];
 
@@ -119,8 +118,8 @@ export default function Projects() {
                   <Image
                     src={project.image}
                     alt={project.name}
-                    width={100} // Set width
-                    height={100} // Set height
+                    width={230} // Set width
+                    height={230} // Set height
                     style={{
                       objectFit: "cover",
                       borderRadius: "8px",

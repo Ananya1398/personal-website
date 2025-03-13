@@ -33,11 +33,9 @@ export default function Navbar() {
         <Box component="ul" sx={{ display: "flex", gap: 3, listStyle: "none", p: 0, m: 0 }}>
           {[
             { label: "About", href: "#about" },
-            { label: "Skills", href: "#skills" },
             { label: "Experience", href: "#experience" },
             { label: "Projects", href: "#projects" },
             { label: "Publications", href: "#publications" },
-            { label: "Contact", href: "#contact" },
           ].map((item, index) => (
             <Box
               key={index}

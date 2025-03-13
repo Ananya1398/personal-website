@@ -13,11 +13,25 @@ export default function About() {
     >
       <Container id="about" sx={{ py: 5 }}>
         <Box>
-          <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif", fontWeight: "bold", color: "#ffffff", mb: 2 }}>
+          <Typography
+            variant="h4"
+            sx={{
+              fontFamily: "Poppins, sans-serif",
+              fontWeight: "bold",
+              color: "#ffffff",
+              mb: 2,
+            }}
+          >
             About Me
           </Typography>
-          <Typography sx={{ opacity: 0.8, fontSize: "1.1rem" }}>
-            Passionate and fast-learning Software Engineer with 3.5 years of experience in Backend Development, Web Development, DevOps, and Cloud Security. I thrive on solving complex technical problems and creating scalable, efficient solutions.
+          <Typography sx={{ opacity: 0.8, fontSize: "1.1rem", lineHeight: "1.6" }}>
+            Passionate about creating impact through writing—whether it's code that drives innovation or poetry that inspires.
+            <br /><br />
+            I'm a fast-learning Software Engineer with 3.5 years of experience in Backend Development, Web Development, DevOps, and Cloud Security. Most recently, I was an SDE Co-op at Amazon Robotics, and currently I am pursuing my MS in Computer Science at Northeastern University, Boston.
+            <br /><br />
+            My experience spans developing scalable software solutions for automation, including historical data insights, image processing, cloud security posture management, cloud auditing, and third-party risk management. I've also worked with industry-standard frameworks like CIS, NIST, and CSA CCM, contributing to robust cloud security baselines.
+            <br /><br />
+            I thrive in environments where problem-solving meets creativity, and I look forward to driving solutions that merge cutting-edge technology with seamless user experiences.
           </Typography>
         </Box>
       </Container>

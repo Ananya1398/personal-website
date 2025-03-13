@@ -1,6 +1,6 @@
 "use client";
 
-import { Container, Typography, Stepper, Step, StepLabel, StepContent, Paper } from "@mui/material";
+import { Container, Typography, Stepper, Step, StepLabel,Box, StepContent, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 
 const experience = [
@@ -35,15 +35,23 @@ export default function Experience() {
           {experience.map((job, index) => (
             <Step key={index} active>
               <StepLabel>
-                <Typography variant="h6" sx={{ fontWeight: "bold", color: "#6e45e2" }}>
+                <Typography variant="h6" sx={{ fontWeight: "bold", color: "#ffffff" }}>
                   {job.company}
                 </Typography>
               </StepLabel>
               <StepContent>
                 <Paper elevation={3} sx={{ p: 3, borderRadius: "12px", background: "linear-gradient(135deg, #2c2c54, #6e45e2)", color: "#ffffff" }}>
+                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  {/* Role */}
                   <Typography variant="subtitle1" sx={{ color: "#dcdde1" }}>
-                    {job.role} | {job.duration}
+                    {job.role}
                   </Typography>
+
+                  {/* Duration */}
+                  <Typography variant="subtitle1" sx={{ color: "#dcdde1", marginLeft: "auto" }}>
+                    {job.duration}
+                  </Typography>
+                </Box>
                   <Typography sx={{ mt: 1, color: "#f5f6fa" }}>
                     {job.description}
                   </Typography>

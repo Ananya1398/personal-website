@@ -73,10 +73,6 @@ export default function Home() {
           <Publications />
         </Box>
 
-        {/* Contact Section */}
-        <Box id="contact">
-          <Contact />
-        </Box>
       </Box>
     </ThemeProvider>
   );

@@ -3,6 +3,7 @@
 import { Container, Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Contact from "@/components/contact"; // ✅ Import Contact
 
 export default function Hero() {
   return (
@@ -18,7 +19,7 @@ export default function Hero() {
         padding: "40px 0",
       }}
     >
-      <Container sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" }}>
+      <Container sx={{ display: "flex", alignItems: "left", justifyContent: "space-between", flexWrap: "wrap" }}>
 
         {/* Left Side: Text Content */}
         <Box sx={{ maxWidth: "50%", textAlign: "left" }}>
@@ -45,11 +46,14 @@ export default function Hero() {
                 background: "#ddd",
               },
             }}
-            href="/resume.pdf"
+            href="/media/Ananya_Asthana_Resume_2025.pdf"
             download
           >
             Download Resume
           </Button>
+          <Box display="flex" justifyContent="flex-start">
+            <Contact />
+          </Box>
         </Box>
 
         {/* Right Side: Animated Profile Image */}
