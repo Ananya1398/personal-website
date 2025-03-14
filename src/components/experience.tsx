@@ -8,13 +8,21 @@ const experience = [
     company: "Amazon Robotics",
     role: "Software Development Engineer Co-Op",
     duration: "July 2024 – December 2024",
-    description: "Developed automation frameworks for historical data insights. Created cloud architecture using Python Lambda, Athena, and CloudWatch for dashboards and alerts. Automated infrastructure creation with AWS CDK.",
+    description: `•\tDeveloped the Amazon Robotics Resource Management (ARRM) Historical Insights Toolkit, streamlining metrics generation from drive unit and fulfillment center historical data, resulting in conservation of human effort and prevention of loss of scripts.
+•\tAutomated the creation of cloud architecture consisting of consisting of Python Lambda for query execution, Athena for data extraction, S3 for storage, IAM roles and policies for least privilege, CloudWatch for dashboarding, EventBridge for periodic process execution, using the TypeScript-based AWS Cloud Development Kit (CDK)
+•\tDocumented an extensive and thorough user guide manual, system architecture and design documents to allow easy adoption and updates
+`,
   },
-  {
+{
     company: "KPMG India",
     role: "Software Development Consultant",
     duration: "January 2020 – July 2023",
-    description: "Led the development of Cloud Security tools and automation solutions. Developed Python-based Cloud Security Posture Management software using Flask, PowerShell, and AWS/Azure/GCP SDKs, deployed for multiple Fortune 500 clients. Built 13+ Azure Cloud Audit bots for policy enforcement. Automated cloud compliance tasks using Terraform and Python. Created dashboards with Power BI and React.js for cloud security insights. Conducted security audits aligning with CIS, NIST, and CSA CCM frameworks.",
+    description: `
+      • Led the development of a Python-based Cloud Security Posture Management tool using Flask, PowerShell, cloud SDKs (AWS, Azure, GCP), with database management using MySQL, deployed for multiple Fortune 500 clients.
+      • Developed 13 Azure Cloud Audit bots for KPMG’s Intelligent Platform for Automation, used globally by member firms.
+      • Spearheaded the automation of cloud processes with Terraform, Python, PowerShell, and Bash, resolving IAM, IaC, Cost optimization, Lambda, and GitLab tickets; containerized solutions using Docker and Azure containers.
+      • Built a scalable PHP-based Third-Party Risk Management solution using Zend Framework, MySQL, and web development technologies including React.js and Redux. Used PowerBI, D3.js and charts.js for data visualization.
+    `,
   },
 ];
 
@@ -43,18 +51,23 @@ export default function Experience() {
                 <Paper elevation={3} sx={{ p: 3, borderRadius: "12px", background: "linear-gradient(135deg, #2c2c54, #6e45e2)", color: "#ffffff" }}>
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   {/* Role */}
-                  <Typography variant="subtitle1" sx={{ color: "#dcdde1" }}>
+                  <Typography variant="subtitle1" sx={{ color: "#f5f6fa", fontSize: "1.2rem" }}>
                     {job.role}
                   </Typography>
 
                   {/* Duration */}
-                  <Typography variant="subtitle1" sx={{ color: "#dcdde1", marginLeft: "auto" }}>
+                  <Typography variant="subtitle1" sx={{ color: "#f5f6fa", marginLeft: "auto", fontSize: "1.1rem" }}>
                     {job.duration}
                   </Typography>
+
                 </Box>
-                  <Typography sx={{ mt: 1, color: "#f5f6fa" }}>
-                    {job.description}
-                  </Typography>
+                <Box sx={{ mt: 1 }}>
+                    {job.description.trim().split("\n").map((line, i) => (
+                      <Typography key={i} sx={{ color: "#dcdde1", mb: 0.5, fontSize: "1.0rem" }}>
+                        {line.trim()}
+                      </Typography>
+                    ))}
+                  </Box>
                 </Paper>
               </StepContent>
             </Step>

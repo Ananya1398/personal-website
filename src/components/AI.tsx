@@ -17,7 +17,6 @@ const answers = {
   Available: "I am available for full-time roles starting May 2025",
 };
 
-// Create a mapping of lowercase keys to original keys for case-insensitive matching
 const lowercaseAnswersMap = Object.keys(answers).reduce<{ [key: string]: string }>(
   (acc, key) => {
     (acc as { [key: string]: string })[key.toLowerCase()] = key;
@@ -38,7 +37,6 @@ export default function AISection() {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Handle keyword-based query
 const handleQuery = () => {
   if (!query.trim()) return;
   const lowerCaseQuery = query.toLowerCase();
@@ -54,7 +52,6 @@ const handleQuery = () => {
   setResponse("Please select a question from the dropdown or contact me directly!");
 };
 
-  // Handle dropdown-based query
 const handleSelect = (value: string) => {
   setQuery(value);
   setResponse(answers[value as keyof typeof answers]);
@@ -62,23 +59,19 @@ const handleSelect = (value: string) => {
 };
 
 
-  // Open dropdown when user focuses on input
   const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
     setAnchorEl(event.currentTarget);
     setShowDropdown(true);
   };
 
-  // Close dropdown when clicking outside
   const handleClose = () => {
     setShowDropdown(false);
   };
 
-  // Close the response box
   const handleCloseResponse = () => {
     setResponse("");
   };
 
-  // ✅ Trigger Ask button when pressing Enter
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       event.preventDefault(); // Prevent default form submission
@@ -115,7 +108,6 @@ const handleSelect = (value: string) => {
       >
         <ClickAwayListener onClickAway={handleClose}>
           <Box sx={{ flex: 1, position: "relative" }}>
-            {/* Input Field */}
             <TextField
               inputRef={inputRef}
               variant="outlined"
@@ -136,7 +128,6 @@ const handleSelect = (value: string) => {
               }}
             />
 
-            {/* Popper for dropdown */}
             <Popper
               open={showDropdown}
               anchorEl={anchorEl}
@@ -202,7 +193,6 @@ const handleSelect = (value: string) => {
         </Button>
       </Box>
 
-      {/* Response Section */}
       {response && (
         <Box
           sx={{

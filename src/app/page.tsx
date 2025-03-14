@@ -9,6 +9,8 @@ import Publications from "@/components/publications";
 import AISection from "@/components/AI";  // Import the AI section
 import Hero from "@/components/hero";
 import About from "@/components/about";
+import Education from "@/components/education";
+import Documents from "@/components/documents";
 import { Container, Box, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import InteractiveBackground from "@/components/interactiveBg"; // Import the InteractiveBackground component // If you still want to keep the custom hook
@@ -67,9 +69,19 @@ export default function Home() {
           <Projects />
         </Box>
 
+           {/* Education Section */}
+        <Box id="education">
+        <Education />
+        </Box>
+
         {/* Publications Section */}
         <Box id="publications">
           <Publications />
+        </Box>
+
+        {/* Documents Section */}
+        <Box id="documents">
+          <Documents />
         </Box>
 
       </Box>
