@@ -21,10 +21,10 @@ const skills = [
   { name: "FastAPI", percentage: 80 },
 
   { name: "Java Swing", percentage: 70 },
+  { name: "ServiceNow", percentage: 70 },
   { name: "Numpy", percentage: 65 },
   { name: "Ollama", percentage: 60 },
-  { name: "ServiceNow", percentage: 70 },
-  { name: "PowerBI", percentage: 80 },
+  { name: "PyTorch", percentage: 70 },
 
 
 ];
