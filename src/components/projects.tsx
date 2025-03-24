@@ -16,6 +16,11 @@ const projects = [
     image: "/media/hireu.png",
   },
   {
+    name: "SHEdule: Cycle-aware smart scheduling for balance ",
+    link: "https://www.youtube.com/watch?v=Mazs7QCUXRc",
+    image: "/media/shedule.png",
+  },
+  {
     name: "EduNavigate: Learning Management System",
     link: "https://edunavigate.netlify.app/#/Kanbas/Dashboard",
     image: "/media/edunavigate.png",
