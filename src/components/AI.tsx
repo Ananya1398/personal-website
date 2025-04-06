@@ -3,18 +3,18 @@ import { Container, Typography, TextField, Button, Box, MenuItem, Popper, ClickA
 import CloseIcon from '@mui/icons-material/Close';
 
 const answers = {
-  Availability: "I am available for full-time roles starting May 2025",
-  Experience: "I have 3.5 years of experience in Backend Development, Cloud, and Security.",
+  Availability: "I am available for internships starting May 2025 and full-time roles starting August 2025",
+  Experience: "I have 3.5 years of experience in Backend Development, Cloud, and AI.",
   Education: "I am pursuing an MS in Computer Science at Northeastern University, Boston.",
   Projects: "I have built an AI-powered hiring assistant, learning management system, cloud security tools, and more.",
-  Skills: "My core skills include Python, Java, AWS, React.js, Docker, and Kubernetes.",
+  Skills: "My core skills include Python, Java, AWS, React.js, Node.js, PyTorch, Docker, and Kubernetes.",
   Internship: "I recently completed a Co-op as an SDE at Amazon Robotics. Read more about it below!",
   Certifications: "I have AWS Certified Security - Specialty, AWS Cloud Practitioner, and Microsoft Azure Fundamentals certifications.",
-  Cloud: "I have experience with AWS, Azure, and GCP, including security posture management and cloud automation.",
-  Development: "I have experience in Backend Development using Python, Flask, FastAPI, and Node.js.",
+  Cloud: "I have experience with AWS, Azure, and GCP, including security posture management and cloud pipeline automation.",
+  Development: "I have experience in Backend Development using Python, Flask, FastAPI, Express.js and Node.js.",
   Security: "I have worked with industry frameworks like CIS, NIST, and CSA CCM to enhance cloud security baselines.",
   Hobbies: "I enjoy writing poetry, listening to music, and exploring nature trails.",
-  Available: "I am available for full-time roles starting May 2025",
+  Available: "I am available for internships starting May 2025 and full-time roles starting August 2025",
 };
 
 const lowercaseAnswersMap = Object.keys(answers).reduce<{ [key: string]: string }>(
