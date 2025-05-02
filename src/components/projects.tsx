@@ -11,14 +11,39 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "HireU: AI-Powered Hiring and Grant Eligibility Assistant ",
+    name: "HireU: AI-Powered Hiring and Grant Eligibility Assistant",
     link: "https://devpost.com/software/hireu",
     image: "/media/hireu.png",
   },
   {
-    name: "SHEdule: Cycle-aware smart scheduling for balance ",
+    name: "SHEdule: Cycle-aware smart scheduling for balance",
     link: "https://www.youtube.com/watch?v=Mazs7QCUXRc",
     image: "/media/shedule.png",
+  },
+  {
+    name: "Study Buddy: Intelligent Learning Assistant with Q&A",
+    link: "https://www.youtube.com/watch?v=N0cfEk1TcFo",
+    image: "/media/studybuddy.png",
+  },
+  {
+    name: "Image Classification with Deep Neural Networks",
+    link: "https://github.com/Ananya1398/cnn-imageclassification-cifar10",
+    image: "/media/cnn.png",
+  },
+  {
+    name: "Key Value Store using PAXOS",
+    link: "https://github.com/Ananya1398/keyvaluestore-paxos",
+    image: "/media/kvs.png",
+  },
+  {
+    name: "Escape the Castle - Reinforcement Learning",
+    link: "https://github.com/Ananya1398/escapethecastle-reinforcement-learning",
+    image: "/media/rl.png",
+  },
+  {
+    name: "Grid Game - Simulated Annealing",
+    link: "https://github.com/Ananya1398/gridgame-simulated-annealing",
+    image: "/media/grid.png",
   },
   {
     name: "EduNavigate: Learning Management System",
@@ -120,18 +145,36 @@ export default function Projects() {
                   onClick={() => window.open(project.link, "_blank")}
                 >
                   {/* Image above the title */}
-                  <Image
-                    src={project.image}
-                    alt={project.name}
-                    width={230} // Set width
-                    height={230} // Set height
-                    style={{
-                      objectFit: "cover",
-                      borderRadius: "8px",
-                      marginBottom: "20px",
-                      alignSelf: "center",
-                    }}
-                  />
+            <Image
+              src={project.image}
+              alt={project.name}
+              width={
+                project.image === "/media/shedule.png"
+                  ? 250
+                  : project.image === "/media/grid.png"
+                  ? 160
+                  : project.image === "/media/cnn.png"
+                  ? 180
+                  : 230
+              }
+              height={
+                project.image === "/media/shedule.png"
+                  ? 250
+                  : project.image === "/media/grid.png"
+                  ? 160
+                  : project.image === "/media/cnn.png"
+                  ? 180
+                  : 230
+              }
+              style={{
+                objectFit: "cover",
+                borderRadius: "8px",
+                marginBottom: "20px",
+                alignSelf: "center",
+              }}
+            />
+
+
 
                   <CardContent>
                     <Typography variant="h6" sx={{ fontWeight: "bold", color: "#f8f9fa" }}>

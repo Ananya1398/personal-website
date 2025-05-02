@@ -6,7 +6,8 @@ import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Publications from "@/components/publications";
-import AISection from "@/components/AI";  // Import the AI section
+import AISection from "@/components/AI";
+import Certifications from "@/components/certifications"; // Import the AI section
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Education from "@/components/education";
@@ -72,6 +73,11 @@ export default function Home() {
            {/* Education Section */}
         <Box id="education">
         <Education />
+        </Box>
+
+        {/* Certification Section */}
+        <Box id="certifications">
+          <Certifications />
         </Box>
 
         {/* Publications Section */}

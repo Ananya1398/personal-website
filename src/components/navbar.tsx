@@ -36,6 +36,7 @@ export default function Navbar() {
             { label: "Experience", href: "#experience" },
             { label: "Projects", href: "#projects" },
             { label: "Education", href: "#education" },
+            { label: "Certifications", href: "#certifications" },
             { label: "Publications", href: "#publications" },
             { label: "Documents", href: "#documents" }
           ].map((item, index) => (
