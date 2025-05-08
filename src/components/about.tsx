@@ -29,10 +29,10 @@ export default function About() {
             <br /><br />
             I&apos;m a fast-learning Software Engineer with 3.5 years of experience in FullStack Development, Cloud Security, DevOps and Artificial Intelligence. Most recently, I was an SDE Co-op at Amazon Robotics, and currently I am pursuing my MS in Computer Science at Northeastern University, Boston.
             <br /><br />
-            My experience spans developing scalable software solutions for automation, for historical data insights, image processing, cloud security posture management, cloud auditing, third-party risk management, and APIs that support real-time robotics systems.
+            My experience spans developing scalable software solutions for automation, data insights, image processing, cloud security posture management, third-party risk management, AI models and APIs that support real-time robotics systems.
             This includes both client-facing as well as product-centric roles, as a part of a team, solo contributor or at times as the lead. My project sprint participation has been right from the ideation and design stage, to database management, architecture and backend development, CI/CD, client delivery, and feedback utilization.
             <br /><br />
-            I thrive in environments where problem-solving meets creativity, and I look forward to driving solutions that merge cutting-edge technology with seamless user experiences.
+            I enjoy participating in hackathons, with the most noteworthy experiences being ones where our solutions leverage AI to facilitate problem-solving and creativity, and I look forward to driving development that merges cutting-edge technology with seamless user experiences.
           </Typography>
         </Box>
       </Container>
